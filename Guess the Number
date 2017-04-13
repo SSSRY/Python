@@ -8,21 +8,22 @@ guess = 0
 print ("which number is TheNumber", end = "")
 
 while (guess != secret) and (times >0):
-  temp = input()
-  guess = int(temp)
-  times = times - 1
+    temp = input()
+    guess = int(temp)
+    times = times - 1
   
-  if guess == secret:
-  print ("Lucky You!") 
+    if guess == secret:
+        print ("Lucky You!") 
   
-  else:
-    if guess > secret:
-      print ("You should input a lower number")
     else:
-      print ("You should input a higher number")
+        if guess > secret:
+            print ("You should input a lower number")
+        else:
+            print ("You should input a higher number")
+            
     if times > 0:
-      print ("Come on, one more time", end ="")
+        print ("Come on, one more time", end ="")
     else:
-      print ("I have gave you too much times, try next.")
+        print ("I have gave you too much times, try next.")
       
 print ("Ok, time to bed.")
