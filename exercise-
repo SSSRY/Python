@@ -1,8 +1,10 @@
 #简单判断
 #字符转换
 
-age = int(input('几岁？(输入数字)_'))
-                                    #input 里为str, 要用int() 将input 里的字符串转化为数字，int() 加在input 里不行，加在input 外可以
+age = int(
+          input('几岁？(输入数字)_')
+          )
+          #input 里为str, 要用int() 将input 里的字符串转化为数字，int() 加在input 里不行，加在input 外可以
 if age >= 18:
     print ('唔，%d了。' % age)
     print ('成年了啊。')
