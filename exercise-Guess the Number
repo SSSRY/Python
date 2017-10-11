@@ -5,11 +5,11 @@ times = 3
 print ("----------------------Guess What---------------")
 guess = 0
 
-print ("Print a number between 1 to 10.")
-print ("You have three times to guess which is what i need:_", end ="")  # 使用/end =""/ 可以让用户直接在语句后输入，不用则换行输入
+print ("Print a number between 1 to 10.\n"
+       "You have three times to guess which is what i need:_", end = "")  # 使用/end = ""/ 可以让用户直接在语句后输入，不用则换行输入
 
 
-while (guess != secret) and (times >0):
+while (guess != secret) and (times > 0):
     temp = input()
     guess = int(temp)
     times = times - 1
