@@ -1,11 +1,13 @@
-import random
+import random # 导入random 函数
 secret = random.randint(1,10)
 times = 3
 
 print ("----------------------Guess What---------------")
 guess = 0
 
-print ("which number is TheNumber", end = "")
+print ("Print a number between 1 to 10.")
+print ("You have three times to guess which is what i need:_", end ="")  # 使用/end =""/ 可以让用户直接在语句后输入，不用则换行输入
+
 
 while (guess != secret) and (times >0):
     temp = input()
@@ -13,7 +15,8 @@ while (guess != secret) and (times >0):
     times = times - 1
   
     if guess == secret:
-        print ("Lucky You!") 
+        print ("Lucky You!")
+        print ("Ok, time to bed.")
   
     else:
         if guess > secret:
@@ -21,9 +24,7 @@ while (guess != secret) and (times >0):
         else:
             print ("You should input a higher number")
             
-    if times > 0:
-        print ("Come on, one more time", end ="")
-    else:
+    if (guess!= secret) and (times > 0):
+        print ("Come on, one more time:_", end ="")
+    elif (guess!= secret) and (times < 1):
         print ("I have gave you too much times, try next.")
-      
-print ("Ok, time to bed.")
