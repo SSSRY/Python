@@ -1,0 +1,19 @@
+# 计算3个不同大小的圆的面积，r1 = 12.34, r2 = 9.08, r3 = 73.1
+
+import math # 引用math, 下面要用到Pi
+
+def area_of_circle(r): # 定义圆的面积
+    f = float(r) # Pi 有小数，所以要用float
+    S = math.pi * f * f # 圆的面积 = π·r 的平方
+    return S
+
+r1 = 12.34
+r2 = 9.08
+r3 = 73.1
+
+s1 = area_of_circle(r1)
+s2 = area_of_circle(r2)
+s3 = area_of_circle(r3)
+
+print ('%.2f, %.2f, %.2f' % (s1,s2,s3)) # 取小数点后两位
+
